@@ -30,7 +30,7 @@ Playwright_WP_Plugin_Test
 ├─ Utils
 └─ Logs
 ``` 
-## Test
+## Tests
 
 | Test | Description                       | Status |
 |------|-----------------------------------|--------|
