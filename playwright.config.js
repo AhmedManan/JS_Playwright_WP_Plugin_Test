@@ -5,7 +5,8 @@ import { defineConfig, devices } from '@playwright/test';
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-// import dotenv from 'dotenv';
+import dotenv from 'dotenv';
+require('dotenv').config();               // 1. load .env
 // import path from 'path';
 // dotenv.config({ path: path.resolve(__dirname, '.env') });
 
@@ -28,6 +29,11 @@ export default defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
+    baseURL: process.env.BASE_URL,        // 2. available in every test
+    headless: false,                      // 3. visible browser for beginners
+    viewport: { width: 1280, height: 720 },
+    screenshot: 'only-on-failure',
+    video:   'retain-on-failure',
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',

@@ -1,18 +1,13 @@
-// tests/login.spec.js
-import { test, expect } from "@playwright/test";
+const { test, expect } = require('@playwright/test');
+const { LoginPage } = require('../pages/LoginPage');
+const { DashboardPage } = require('../pages/DashboardPage');
 
-test("WordPress admin login", async ({ page }) => {
-  
-  // Go to WP login page
-  await page.goto("https://zeushood.com/wp-login.php");
 
-  // Fill login form
-  await page.fill("#user_login", "testuser");
-  await page.fill("#user_pass", "testPass#");
-
-  // Click login
-  await page.click("#wp-submit");
-
-  // Assert Dashboard loaded
-  await expect(page.locator("#wpadminbar")).toBeVisible();
+test.describe('WordPress Login', () => {
+  test('WordPress Login Functionality Test', async ({ page }) => {
+    const loginPage = new LoginPage(page);
+    await loginPage.goto();
+    await loginPage.login(process.env.ADMIN_USERNAME, process.env.ADMIN_PASSWORD);
+    await expect(page).toHaveURL(/wp-admin/);
+  });
 });
