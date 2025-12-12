@@ -11,7 +11,7 @@ jobs:
     # 🚨 ENVIRONMENT VARIABLES BLOCK
     env:
       # Non-sensitive configuration data
-      BASE_URL: https://zeushood.com
+      BASE_URL: ${{ secrets.BASE_URL }}
 
       # Need to create these secrets in repository settings:
       ADMIN_USERNAME: ${{ secrets.ADMIN_USERNAME }}
