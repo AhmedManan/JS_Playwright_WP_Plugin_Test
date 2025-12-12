@@ -30,7 +30,7 @@ export default defineConfig({
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
     baseURL: process.env.BASE_URL,        // 2. available in every test
-    headless: false,                      // 3. visible browser for beginners
+    headless: true,                      // 3. visible browser for beginners
     viewport: { width: 1280, height: 720 },
     screenshot: 'only-on-failure',
     video:   'retain-on-failure',
