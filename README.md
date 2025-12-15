@@ -40,19 +40,32 @@ ADMIN_PASSWORD= Admin Password
 ## Project Structure
 ```bash
 Playwright_WP_Plugin_Test
-├─ .env                     ← .env variables
-├─ playwright.config.js     ← config
-├─ pages
-│  └─ LoginPage.js          ← page object
-├─ tests
-│  └─ login.spec.js         ← actual test
+├─ .env                     ← .env Variables
+├─ playwright.config.js     ← Config
+├─ pages                    ← Page Objects Directory
+│  ├─ LoginPage.js
+│  ├─ DashboardPage.js
+│  └─ PluginPage.js      
+├─ test_data                ← Test Data Directory (yml, csv, txt etc)
+│  └─ plugin.yml
+├─ tests                    ← actual tests Directory
+│  ├─ login.spec.js
+│  └─ plugin.spec.js        
 ├─ package.json
 ├─ Screenshots
-├─ Utils
+├─ Utils                    ← Test Utils Directory
+│  └─ pluginDataLoader.js
 └─ Logs
 ``` 
 ## Tests
 
-| Test | Description                       | Status |
-|------|-----------------------------------|--------|
-| 01   | WordPress Login Test              | ✔️ |
+### WordPress Functionality
+| Test | Description                          | Status |
+|------|--------------------------------------|--------|
+| 01   | WordPress Login Test                 | ✔️ |
+| 02   | WordPress Plugin Page Navigation Test| ✔️ |
+
+### Plugin Functionality
+| Test | Description                           | Status |
+|------|---------------------------------------|--------|
+| 01   | Verify Plugin In Installed Plugin List| ✔️ |

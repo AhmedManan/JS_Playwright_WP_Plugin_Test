@@ -1,0 +1,10 @@
+plugins:
+  # The first entry, which your test will read
+  - name: FlexTable
+    path: ""
+    version: "1.0"
+  
+  # Example of another entry
+  - name: WooCommerce
+    path: ""
+    version: "8.5"
