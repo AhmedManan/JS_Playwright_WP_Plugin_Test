@@ -3,6 +3,7 @@ plugins:
   - name: FlexTable
     path: ""
     version: "1.0"
+    DashboardURL: "/wp-admin/admin.php?page=gswpts-dashboard"
   
   # Example of another entry
   - name: WooCommerce

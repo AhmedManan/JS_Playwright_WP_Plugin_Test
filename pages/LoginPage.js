@@ -23,6 +23,8 @@ class LoginPage {
     await this.userField.fill(username);
     await this.passField.fill(password);
     await this.submitBtn.click();
+  }
+  async verifyLogin() {
     // wait until dashboard is shown
     await expect(this.howdy).toBeVisible({ timeout: 10000 });
   }

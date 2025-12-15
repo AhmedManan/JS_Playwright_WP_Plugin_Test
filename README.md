@@ -45,7 +45,8 @@ Playwright_WP_Plugin_Test
 ├─ pages                    ← Page Objects Directory
 │  ├─ LoginPage.js
 │  ├─ DashboardPage.js
-│  └─ PluginPage.js      
+│  ├─ PluginPage.js
+│  └─ pluginDashboardPage.js      
 ├─ test_data                ← Test Data Directory (yml, csv, txt etc)
 │  └─ plugin.yml
 ├─ tests                    ← actual tests Directory
@@ -69,3 +70,19 @@ Playwright_WP_Plugin_Test
 | Test | Description                           | Status |
 |------|---------------------------------------|--------|
 | 01   | Verify Plugin In Installed Plugin List| ✔️ |
+| 02   | Plugin Dashboard Page Navigation Test | ✔️ |
+
+## Additional Topics
+
+### Playwright Javascript WordPress Plugin Test
+In the bellow mentioned repository contains an automation test suite built with Playwright, Python & Pytest. I implement the Page Object Model (POM) design pattern.
+
+ **Project Link:** [Python_Playwright_WP_Plugin_Test](https://github.com/AhmedManan/QA_WPPOOL_Assignment)
+
+### Similar Topics & Articles
+
+[Python Complete Cheat Sheet](https://mananacademy.com/complete-python-cheat-sheet/)
+
+[Complete JavaScript Cheat sheet](https://mananacademy.com/complete-javascript-cheat-sheet/)
+
+[⬆️Back to Top](#-javascript-playwright-wordpress-plugin-test)

@@ -8,6 +8,7 @@ test.describe('WordPress Login', () => {
     const loginPage = new LoginPage(page);
     await loginPage.goto();
     await loginPage.login(process.env.ADMIN_USERNAME, process.env.ADMIN_PASSWORD);
+    await loginPage.verifyLogin();
     await expect(page).toHaveURL(/wp-admin/);
   });
 });

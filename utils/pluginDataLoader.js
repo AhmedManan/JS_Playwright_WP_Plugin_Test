@@ -45,5 +45,15 @@ function getPluginName() {
     
     return 'Default Plugin Name'; 
 }
+function getPluginDashboardURL() {
+    const pluginData = getPluginData(); 
+    
+    if (pluginData.length > 0 && pluginData[0].DashboardURL) {
+        // Return the 'name' column value from the first item
+        return pluginData[0].DashboardURL;
+    }
+    
+    return 'Default Plugin Dashboard URL'; 
+}
 
-module.exports = { getPluginName };
+module.exports = { getPluginName, getPluginDashboardURL };
