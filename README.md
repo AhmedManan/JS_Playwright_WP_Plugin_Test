@@ -20,6 +20,11 @@ To create a new playwright project, go to your project root directory and open t
 ```bash
 npm init playwright@latest
 ```   
+When you first clone this repository, go to your project root directory and open terminal. Use the below command:
+```bash
+npm install
+```   
+
 Install the browsers Playwright needs:
 ```bash
 npm install playwright
@@ -37,6 +42,19 @@ ADMIN_USERNAME= Admin Username
 ADMIN_PASSWORD= Admin Password
 
 ```   
+### Run Tests
+To execute the entire test suite across all configured browsers (Chromium, Firefox, WebKit) run command:
+```bash
+npx playwright test
+```   
+Run only the tests within the ```plugin.spec.js``` file:
+```bash
+npx playwright test tests/plugin.spec.js
+``` 
+To open the browser and visually watch the tests execute (useful for debugging):
+```bash
+npx playwright test --headed
+``` 
 ## Project Structure
 ```bash
 Playwright_WP_Plugin_Test
@@ -85,4 +103,4 @@ In the bellow mentioned repository contains an automation test suite built with 
 
 [Complete JavaScript Cheat sheet](https://mananacademy.com/complete-javascript-cheat-sheet/)
 
-[⬆️Back to Top](#-javascript-playwright-wordpress-plugin-test)
+[⬆️ Back to Top](#javascript-playwright-wordpress-plugin-test)
