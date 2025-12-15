@@ -6,13 +6,13 @@ const { expect } = require('@playwright/test');
  */
 class LoginPage {
   constructor(page) {
-    this.page      = page;
+    this.page= page;
 
     // --- Locators ---
     this.userField = page.locator('#user_login');
     this.passField = page.locator('#user_pass');
     this.submitBtn = page.locator('#wp-submit');
-    this.howdy     = page.locator('#wp-admin-bar-my-account');
+    this.howdy= page.locator('#wp-admin-bar-my-account');
   }
 
   async goto() {
