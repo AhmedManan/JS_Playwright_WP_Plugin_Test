@@ -1,7 +1,7 @@
 # Javascript Playwright WordPress Plugin Test
 In this repository contains an automation test suite built with Playwright & JavaScript. I implement the Page Object Model (POM) design pattern.
 
-Project Documentation PDF: <a href="https://github.com/AhmedManan/Playwright_WP_Plugin_Automation_Test/Document/Playwright_WordPress_Plugin_Automation_Test.pdf" target="_blank">JS_Playwright_Automation_Test.pdf</a>
+Project Documentation PDF: <a href="/documents/JS_Playwright_Automation_Test.pdf" target="_blank">JS_Playwright_Automation_Test.pdf</a>
 
 ## Project Setup
 
