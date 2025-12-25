@@ -14,7 +14,7 @@ class PluginDashboardPage {
     this.dashboardURL = getPluginDashboardURL();
 
     // --- Locators ---
-    this.pageHeading = page.getByRole('heading', { name: 'All Tables', exact: true });
+    this.pageHeading = page.getByRole('heading', { name: 'You’ve completed store setup', exact: true });
   }
 
   async goto() {

@@ -1,11 +1,12 @@
 plugins:
   # The first entry, which your test will read
-  - name: FlexTable
-    path: ""
-    version: "1.0"
-    DashboardURL: "/wp-admin/admin.php?page=gswpts-dashboard"
-  
-  # Example of another entry
   - name: WooCommerce
     path: ""
-    version: "8.5"
+    version: "1.10.4.3"
+    DashboardURL: "/wp-admin/admin.php?page=wc-admin"
+  
+  # Another entry, to test multiple entries
+  - name: WP-Optimize - Clean, Compress, Cache
+    path: ""
+    version: "4.4.0"
+    DashboardURL: "/wp-admin/admin.php?page=WP-Optimize"
